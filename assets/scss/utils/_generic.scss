@@ -1,0 +1,40 @@
+@use "../abstract" as a;
+
+body {
+    background-color: a.$off-black;
+}
+.user-home-page-section {
+    height: 14rem;
+}
+.section {
+    &__container {
+        margin: 5rem 2rem 1rem;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        color: a.$off-white;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;     
+    }
+    &__explore-link {
+        color: a.$teal;
+        font-size: .8rem; 
+        text-decoration: none;
+        opacity: 0;
+    }
+    &__header:hover
+    &__explore-link {
+        opacity: 1;
+        transition-duration: .8s;
+    }
+}
+
+.blue {
+    background-color: a.$blue;
+}
+.orange {
+    background-color: a.$orange;
+}

@@ -1,0 +1,68 @@
+@use "../abstract" as a;
+
+.profile-page{
+    text-align: center;
+    margin-top:10%;
+    &__title {
+        text-align: center;
+        color: a.$off-white;
+        margin: 2rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: a.$dark-white;
+        outline: solid 1px a.$dark-white;
+        padding: .5rem 2rem;
+    }
+    &__link:hover {
+        color: a.$white;
+        outline-color: a.$white;
+    }
+}
+.profile-nav {
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 4rem;
+        padding:0;
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &__profile-icon {
+        width: 10rem;
+        height: 10rem;
+        font-size: 8rem;
+        margin-bottom:1rem;
+        color: a.$off-white;
+        text-align: center;
+        border-radius: 2px;
+        align-content: center;
+    }
+    &__profile-name {
+        text-align: center;
+        color: a.$dark-white;
+    }
+    &__link:hover  
+    &__profile-icon {
+        border: solid 2px a.$white;
+    }
+    &__link:hover  
+    &__profile-name {
+        color: a.$white;
+    }
+    &__kids-profile-img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        margin-bottom:1rem;
+    }
+}
+.add-profile {
+    font-size: 6rem;
+    color: a.$dark-white;
+}
+.add-profile:hover {
+    background-color: a.$white;
+}

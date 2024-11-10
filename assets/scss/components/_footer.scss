@@ -1,0 +1,48 @@
+@use "../abstract" as a;
+
+.footer {
+    padding: 2rem 5rem;
+    margin-top: 3rem;
+    &__icon-container {
+        margin: 1rem 8rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    &__icon {
+        color: a.$off-white;
+        font-size: 1.8rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: a.$dark-white;
+        font-size: .8rem;
+    }
+    &__link:hover {
+        text-decoration: underline;
+    }
+    &__link-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 8rem 2rem;
+    }
+    &__links-group {
+        display: flex;
+        flex-direction: column;
+        width: 14rem;
+        gap: 1rem;
+    }
+    &__sub-link {
+        margin: 1rem 8rem;
+        text-decoration: none;
+        color: a.$dark-white;
+        font-size: .8rem;
+        outline: solid 1px a.$dark-white;
+        padding: .5rem;
+    }
+    &__copyright {
+        margin: 1rem 8rem;
+        color: a.$dark-white;
+        font-size: .8rem;
+    }
+}

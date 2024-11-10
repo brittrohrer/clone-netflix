@@ -1,0 +1,121 @@
+@use "../abstract" as a;
+
+.video-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: .5rem;
+    list-style-type: none;
+
+}
+.video-list-item {
+    &__img-container {
+        padding: 0;
+    }
+    &__img {
+        width: 15rem;
+        height: 8rem;
+        object-fit:cover;
+        border-radius: 5px;
+    }
+    &__hidden {
+        display: none;
+    }
+    &__description-container {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: .5rem;
+    }
+
+    &__controls-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        border: solid 1px a.$mid-white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: .8rem;
+        width:2.2rem;
+        padding: .6rem;
+        margin: .2rem;
+        color: a.$mid-white;
+    }
+    
+    &__info {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        color: a.$off-white;
+    }
+    &__rating {
+        border: solid 1px a.$off-white;
+        padding: 0 .5rem;
+        font-size: .8rem;
+        align-content: center;
+        margin:0;
+    }
+    &__info-item {
+        margin: 0;
+        font-size: .8rem;
+    }
+    &__genres-list {
+        display: flex;
+        justify-content:flex-start;
+        color: a.$off-white;
+        gap: 1rem;
+        list-style-type: none;
+        padding: 0;
+    }
+    &__genre-item {
+        color: a.$off-white;
+        font-size: .8rem;
+    }
+}
+.icon {
+    &__play:hover {
+        color: a.$white;
+    }    
+
+    &__add:hover {
+        border-color: a.$white;
+        color: a.$white;
+    }
+    &__rating:hover {
+        border-color: a.$white;
+        color: a.$white;
+    }
+    &__arrow:hover {
+        border-color: a.$white;
+        color: a.$white;
+    }
+}
+
+
+.video-list-item:hover {
+        background: a.$off-black;
+        transform: scale(1.1);
+        border-radius: 5px;
+        box-shadow: 0 0 5px 2px a.$black;
+}
+.video-list-item:hover 
+.video-list-item__hidden {
+        display: block;
+
+}
+.view-all {
+    &__section {
+        height: max-content;
+    }
+    &__container {
+        margin-bottom: 2rem;
+    }
+    &__list {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        justify-content: center;
+    }
+}
