@@ -12,7 +12,7 @@ const brand =ref(`Netflix`);
             <NuxtLink class="user-nav__brand" to="/">{{ brand }}</NuxtLink>
             <ul class="user-nav__list">
                 <li class="user-nav__item">
-                    <NuxtLink class="user-nav__link" to="/user1">Home</NuxtLink>
+                    <NuxtLink class="user-nav__link" to="/user">Home</NuxtLink>
                 </li>
                 <li class="user-nav__item">
                     <NuxtLink class="user-nav__link" to="/shows">TV Shows</NuxtLink>
